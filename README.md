@@ -1,13 +1,15 @@
 # Approximation of Lesbegue Integral
 
-This program visualizes the curve `(xs, ys)` of f: x -> y, and divide `ys` in the following manner.
+This program visualizes the curve $f: x \rightarrow y$ in terms of discretized `(xs, ys)`, divides `ys` in the following way
 
 $$
-A_{n, k} = \{k \dot 2 ^ {-n} \leq y \leq(k+1) \dot 2 ^ {-n} \}
+A_{n, k} = \\{x \mid k \cdot 2 ^ {-n} \leq y \leq(k+1) \cdot 2 ^ {-n} \\},
 $$
 
-And approximate f by
+and then approximates f by the following series
 
 $$
-\sum_{k = 0} ^ {n \dot 2 ^ n} k \dot 2 ^ {-n} \xi(A_{n, k})
+\sum_{k = 0} ^ {n \cdot 2 ^ n} k \cdot 2 ^ {-n} \chi(A_{n, k}),
 $$
+
+where $\chi$ is the characteristic function.
